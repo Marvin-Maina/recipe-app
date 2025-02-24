@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .logo { font-family: 'Pacifico', cursive; }
+        .nav-link:hover { color: #FFCC00; text-decoration: none; }
+    </style>
+    <title>Sanji Eatzz</title>
+</head>
+<body class="bg-amber-100 text-gray-900">
+    <header class="bg-orange-600 text-white p-4 flex flex-wrap justify-between items-center shadow-md text-xl font-bold">
+        <h1 class="text-2xl font-bold logo">Sanji Eatzz</h1>
+
+        <form id="searchForm" class="flex space-x-2 mt-2 sm:mt-0">
+            <input type="text" id="searchInput" placeholder="Search Recipes..." class="p-2 rounded bg-orange-100 text-gray-900 focus:outline-none">
+            <button id="searchButton" class="bg-white text-orange-600 px-4 py-2 rounded font-bold">Search</button>
+        </form>
+    </header>
+
+    <main class="p-4 text-center">
+        <h1 class="text-2xl font-semibold">Welcome to Sanji Eatzz</h1>
+        <div id="recipeContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6"></div>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
